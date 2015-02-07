@@ -297,13 +297,3 @@ if __name__=='__main__':
     win.setCoords(0,0,1000,1000)
     begin=SudokuGame(win,Point(300,400),50.0)
     
-                
-
-
-
-
-
-
-
-        
-        
