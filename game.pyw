@@ -15,7 +15,7 @@ class SudokuGame:
 
     "This function draws the start interface"
     def __start(self,win):
-        Image_back1=Image(Point(600,500),"image/setting1.gif")
+        Image_back1=Image(Point(600,500),"image\setting1.gif")
         Image_back1.draw(win)
         Button_play=Button(win,Point(500,350),550,100,"Start")
         Button_play.activate()
@@ -23,7 +23,7 @@ class SudokuGame:
         Button_how.activate()
         Button_exit=Button(win,Point(500,150),550,100,"Exit",'red')
         Button_exit.activate()
-        Image_welcome=Image(Point(500,800),"image/sudoku.gif")
+        Image_welcome=Image(Point(500,800),"image\sudoku.gif")
         Image_welcome.draw(win)
         while 1:
             p=win.getMouse()
@@ -45,7 +45,7 @@ class SudokuGame:
 
     "This function draws the introduction interface"
     def __introduction(self,win):
-        Image_back2=Image(Point(500,500),"image/setting2.gif")
+        Image_back2=Image(Point(500,500),"image\setting2.gif")
         Image_back2.draw(win)
         Text_intro=Text(Point(300,900),"Sudoku, sometimes spelled Su Doku, is a")
         Text_intro.draw(win)
@@ -90,7 +90,7 @@ class SudokuGame:
 
     "This function draws the level choosing interface"
     def __chooselevel(self,win):
-        Image_back3=Image(Point(500,500),"image/setting3.gif")
+        Image_back3=Image(Point(500,500),"image\setting3.gif")
         Image_back3.draw(win)
         Button_level=[]
         Button_level.append(Button(win,Point(800,700),300,100,"Easy"))
@@ -118,7 +118,7 @@ class SudokuGame:
 
     "This function draws the game interface"
     def __playgame(self,win,level):
-        Image_back4=Image(Point(300,500),"image/setting4.gif")
+        Image_back4=Image(Point(300,500),"image\setting4.gif")
         Image_back4.draw(win)
         sdk=Sudoku()
         self.sdkquestion=sdk.CreateSudoku()
@@ -250,7 +250,7 @@ class SudokuGame:
                     answer=str(self.sdkquestion[i][j])
                     self.tests[i][j].setText(answer)
             win3=GraphWin("Lost",400,200)
-            Image_back5=Image(Point(200,100),"image/lose.gif")
+            Image_back5=Image(Point(200,100),"image\lose.gif")
             Image_back5.draw(win3)
             result=Text(Point(200,100),"You got a wrong answer!")
             result.draw(win3)
@@ -268,7 +268,7 @@ class SudokuGame:
 
         else :
             win3=GraphWin("Won",400,200)
-            Image_back5=Image(Point(200,100),"image/win.gif")
+            Image_back5=Image(Point(200,100),"image\win.gif")
             Image_back5.draw(win3)
             result=Text(Point(200,100),"Congratulations!")
             result.draw(win3)
